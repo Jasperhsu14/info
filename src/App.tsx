@@ -43,16 +43,25 @@ interface Education {
 // --- Data ---
 const experiences: Experience[] = [
   {
+    company: "Dept. of Information Technology, Taipei City Government",
+    role: "Substitute Military Service",
+    period: "04/2026 – 07/2026",
+    location: "Taipei, Taiwan",
+    description: [
+      "Deployed a PII data anonymization tool and evaluated open-source instant messaging solutions."
+    ],
+    tags: ["Government IT", "Data Privacy", "Open Source"]
+  },
+  {
     company: "Microsoft Taiwan",
     role: "Marketing Operation Intern – Sales Enablement & Operation Group",
     period: "06/2024 – 07/2025",
     location: "Taipei, Taiwan",
     description: [
-      "Directed a team of 4 Student Experts as Project Manager of student booth at DevDays Asia 2025, delivering 2 hands-on workshops for 1000+ developers.",
-      "Partnered with field marketing for Azure, M365, BizApps, and Copilot on GTM campaigns and flagship events.",
-      "Filmed 'Meet My Copilot' reels reaching 150k+ views, turning tech features into engaging stories.",
-      "Produced 18-episode podcast (2.5k+ downloads) and led PowerBI workshops for 60+ students.",
-      "Led LinkedIn TW Campus Ambassador Program, co-hosting events for 220+ participants."
+      "Directed a team of 4 Student Experts as Project Manager of student booth at DevDays Asia 2025, delivering 2 hands-on workshops and interactive experiences on AI for 1000+ target developers.",
+      "Co-led GTM campaigns with field marketing, translating Azure/Copilot capabilities into B2B value propositions for business decision-makers — driving 150K+ views across Copilot video reels series.",
+      "Produced 18-episode podcast (2.5k+ downloads), and ran PowerBI workshops for 60+ students.",
+      "Led LinkedIn TW Campus Ambassador Program, co-hosted event for students (220+ participants)."
     ],
     tags: ["Project Management", "Content Strategy", "Data Analysis", "Public Speaking"]
   },
@@ -62,9 +71,9 @@ const experiences: Experience[] = [
     period: "12/2023 – 06/2024",
     location: "Taipei, Taiwan",
     description: [
-      "Automated dashboards with Looker Studio, cutting data retrieval time by 80%.",
-      "Led year-end B2B client satisfaction survey and presented insights at company all-hands.",
-      "Managed digital campaigns across social, EDM, and Web, generating high-quality leads for the SaaS product funnel."
+      "Automated dashboards with Looker Studio integrating Google Analytics data, cutting retrieval time by 80% and empowering sales and marketing team to turn raw data into customer journey insight.",
+      "Led year-end B2B client satisfaction survey, from design to analysis, presenting at company all-hands.",
+      "Managed digital campaigns (social, EDM, Web) and Google Analytics, assisted in product pre-launch campaigns to boost participation, generating high-quality leads for the funnel and maximizing SOV."
     ],
     tags: ["MarTech", "Looker Studio", "B2B Marketing", "Lead Generation"]
   },
@@ -74,8 +83,7 @@ const experiences: Experience[] = [
     period: "02/2022 – 09/2023",
     location: "Taipei, Taiwan",
     description: [
-      "Developed and launched 'ChatGPT x WordPress' course on Hahow with 120+ paid students.",
-      "Led a website team of 4, achieving a 131% increase in organic traffic in 4 months through SEO optimization."
+      "Developed and launched a paid online course (130+ students) on Hahow, and led a 4-person website team to a 131% organic traffic increase via SEO in 4 months."
     ],
     tags: ["SEO", "Course Creation", "Team Leadership", "Content Marketing"]
   }
@@ -85,8 +93,8 @@ const education: Education[] = [
   {
     school: "National Taiwan University of Science and Technology (NTUST)",
     degree: "B.B.A. in Information Management",
-    period: "09/2021 - 02/2026 (Expected)",
-    details: "Research: Achieving Text Usage Habit Replication through Semantic Recognition and LLMs."
+    period: "09/2021 - 02/2026",
+    details: "HSU, Hao-Jiun et al. Digital Bionics and Heritage: Achieving Text Usage Habit Replication through Semantic Recognition Technology and Large Language Models. Communications of the CCISA."
   },
   {
     school: "Budapest University of Technology and Economics (BME)",
@@ -95,9 +103,9 @@ const education: Education[] = [
   },
   {
     school: "National Taiwan University (NTU)",
-    degree: "Creativity and Entrepreneurship Program (創創學程)",
+    degree: "Creativity and Entrepreneurship Program",
     period: "09/2023 - 01/2025",
-    details: "Project: KonnecT, a platform for tracking fandom journeys."
+    details: "Project: KonnecT, platform for tracking fandom journeys and interacting with artists."
   }
 ];
 
@@ -229,7 +237,7 @@ export default function App() {
               <span className="text-blue-600 text-4xl md:text-6xl">(Hao-Jiun)</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-600 mb-8 max-w-lg leading-relaxed">
-              Marketing Operations Intern at <span className="font-semibold text-slate-900">Microsoft Taiwan</span> & LinkedIn Campus Ambassador. 
+              Information Management graduate from <span className="font-semibold text-slate-900">NTUST</span>. Former Marketing Operations Intern at <span className="font-semibold text-slate-900">Microsoft Taiwan</span>.
               Bridging technology and strategy with a data-driven mindset.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -448,6 +456,16 @@ export default function App() {
                   <div>
                     <h4 className="font-bold text-slate-900">TEDxNTUST 7th</h4>
                     <p className="text-sm text-slate-600">Director of Marketing & PR (2021–2022)</p>
+                  </div>
+                </div>
+                <div className="p-6 rounded-2xl bg-blue-50 border border-blue-100 flex gap-4 items-start">
+                  <div className="w-10 h-10 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center shrink-0">
+                    <Award size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900">Certifications</h4>
+                    <p className="text-sm text-slate-600">Microsoft Certified: Azure Fundamentals (AZ-900)</p>
+                    <p className="text-sm text-slate-600">Google Project Management by Coursera</p>
                   </div>
                 </div>
               </div>
