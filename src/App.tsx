@@ -479,7 +479,7 @@ const AppleBentoGrid = () => {
           </div>
           <div className="min-w-0">
             <div className="font-bold text-slate-900 text-sm sm:text-base md:text-lg leading-snug truncate">國立臺灣科技大學 NTUST</div>
-            <div className="text-xs sm:text-sm text-slate-600 truncate">B.B.A. in Information Management (CCISA)</div>
+            <div className="text-xs sm:text-sm text-slate-600 truncate">B.B.A. in Information Management (CCISA Co-author)</div>
             <div className="text-[11px] sm:text-xs font-semibold text-blue-600 mt-0.5">2021/9 – 2026/2</div>
           </div>
         </motion.div>
@@ -504,20 +504,20 @@ const AppleBentoGrid = () => {
           </div>
         </motion.div>
 
-        {/* Card 3: Taipei City Gov DoIT */}
+        {/* Card 3: BME Exchange (Left Top, 1 col) */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
           className="col-span-1 p-3 sm:p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
         >
-          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-sky-50 text-sky-700 flex items-center justify-center font-bold text-xs mb-1.5 shadow-xs border border-sky-100">
-            DoIT
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-red-900 text-white flex items-center justify-center text-xs font-bold mb-1.5 shadow-xs">
+            BME
           </div>
-          <div className="font-bold text-slate-900 text-xs sm:text-sm leading-tight">Taipei City Gov</div>
-          <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium">Substitute Military</div>
-          <div className="text-[10px] sm:text-[11px] font-semibold text-blue-600 mt-0.5">2026/4 – 2026/7</div>
+          <div className="font-bold text-slate-900 text-xs sm:text-sm">BME Exchange</div>
+          <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium truncate">Budapest, Hungary</div>
+          <div className="text-[10px] sm:text-[11px] font-semibold text-blue-600 mt-0.5">2025/9 – 2026/1</div>
         </motion.div>
 
-        {/* CENTER HERO CARD: 許皓鈞 Jasper */}
+        {/* CENTER HERO CARD: 許皓鈞 Jasper (2 cols x 2 rows) */}
         <motion.div 
           whileHover={{ scale: 1.015 }}
           className="col-span-2 row-span-2 p-5 sm:p-6 md:p-8 rounded-3xl bg-gradient-to-tr from-rose-500 via-pink-500 to-amber-400 text-white shadow-xl shadow-pink-500/25 flex flex-col items-center justify-center text-center relative overflow-hidden group"
@@ -531,7 +531,7 @@ const AppleBentoGrid = () => {
           </div>
         </motion.div>
 
-        {/* Card 4: GoSky AI (Product Marketing Intern) */}
+        {/* Card 4: GoSky AI (Right Top, 1 col) */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
           className="col-span-1 p-3 sm:p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
@@ -542,46 +542,7 @@ const AppleBentoGrid = () => {
           <div className="text-[10px] sm:text-[11px] font-semibold text-blue-600">2023/12 – 2024/6</div>
         </motion.div>
 
-        {/* Card 5: BME Exchange */}
-        <motion.div 
-          whileHover={{ scale: 1.02 }}
-          className="col-span-1 p-3 sm:p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
-        >
-          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-red-900 text-white flex items-center justify-center text-xs font-bold mb-1.5 shadow-xs">
-            BME
-          </div>
-          <div className="font-bold text-slate-900 text-xs sm:text-sm">BME Exchange</div>
-          <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium truncate">Budapest, Hungary</div>
-          <div className="text-[10px] sm:text-[11px] font-semibold text-blue-600 mt-0.5">2025/9 – 2026/1</div>
-        </motion.div>
-
-        {/* Card 6: 7-ELEVEN myship */}
-        <motion.div 
-          whileHover={{ scale: 1.02 }}
-          className="col-span-1 p-3 sm:p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
-        >
-          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-orange-500/10 text-orange-600 flex items-center justify-center font-black text-xs mb-1 border border-orange-200/50">
-            7-11
-          </div>
-          <div className="font-bold text-slate-900 text-xs sm:text-sm leading-tight">7-ELEVEN myship</div>
-          <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium">Coordinator</div>
-          <div className="text-[10px] sm:text-[11px] font-semibold text-blue-600 mt-0.5">2024/1 – Present</div>
-        </motion.div>
-
-        {/* Card 7: LinkedIn Taiwan */}
-        <motion.div 
-          whileHover={{ scale: 1.02 }}
-          className="col-span-1 p-3 sm:p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
-        >
-          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center mb-1.5 shadow-xs">
-            <Linkedin size={15} />
-          </div>
-          <div className="font-bold text-slate-900 text-xs sm:text-sm leading-tight">LinkedIn TW</div>
-          <div className="text-[10px] text-slate-500">Ambassador Lead</div>
-          <div className="text-[10px] sm:text-[11px] font-semibold text-blue-600 mt-0.5">2024/11 – 2025/6</div>
-        </motion.div>
-
-        {/* Card 8: NTUCEP KonnecT */}
+        {/* Card 5: NTUCEP KonnecT (Left Bottom, 1 col) */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
           className="col-span-1 p-3 sm:p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
@@ -594,7 +555,7 @@ const AppleBentoGrid = () => {
           <div className="text-[10px] sm:text-[11px] font-semibold text-blue-600 mt-0.5">2023/9 – 2024/6</div>
         </motion.div>
 
-        {/* Card 9: TMR x Hahow */}
+        {/* Card 6: TMR x Hahow (Right Bottom, 1 col) */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
           className="col-span-1 p-3 sm:p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
@@ -605,25 +566,36 @@ const AppleBentoGrid = () => {
           <div className="text-[10px] sm:text-[11px] font-semibold text-blue-600 mt-0.5">2022/2 – 2023/9</div>
         </motion.div>
 
-        {/* Card 10: Certifications */}
+        {/* Card 7: Power of Agility (Bottom Row, Col 1) */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
           className="col-span-1 p-3 sm:p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
         >
-          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-1.5 shadow-xs border border-emerald-100">
-            <Award size={16} />
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center mb-1.5 shadow-xs border border-cyan-100">
+            <Zap size={16} />
           </div>
-          <div className="font-bold text-slate-900 text-xs sm:text-sm leading-tight">Certifications</div>
-          <div className="text-[10px] text-emerald-600 font-semibold">AZ-900 • AI-900</div>
-          <div className="text-[10px] text-slate-500 font-medium">Google PM</div>
+          <div className="font-bold text-slate-800 text-xs sm:text-sm leading-tight">Power of Agility</div>
+          <div className="text-[10px] text-slate-500">Growth Mindset</div>
         </motion.div>
 
-        {/* Card 11: TOEIC 855 */}
+        {/* Card 8: Power of People (Bottom Row, Col 2) */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
           className="col-span-1 p-3 sm:p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
         >
-          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-slate-900 text-white flex items-center justify-center text-xs font-bold mb-1.5 shadow-xs">
+          <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-1.5 shadow-xs border border-purple-100">
+            <Users size={16} />
+          </div>
+          <div className="font-bold text-slate-800 text-xs sm:text-sm leading-tight">Power of People</div>
+          <div className="text-[10px] text-slate-500">Cross-Functional</div>
+        </motion.div>
+
+        {/* Card 9: TOEIC 855 (Bottom Row, Col 3) */}
+        <motion.div 
+          whileHover={{ scale: 1.02 }}
+          className="col-span-1 p-3 sm:p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
+        >
+          <div className="w-8 h-8 rounded-lg bg-slate-900 text-white flex items-center justify-center text-xs font-bold mb-1.5 shadow-xs">
             文 A
           </div>
           <div className="font-bold text-slate-900 text-xs sm:text-sm">TOEIC 855</div>
@@ -631,41 +603,17 @@ const AppleBentoGrid = () => {
           <div className="text-[10px] text-amber-600 font-semibold">Gold Certificate</div>
         </motion.div>
 
-        {/* Card 12: Personal AI Apps */}
+        {/* Card 10: LinkedIn Taiwan (Bottom Row, Col 4) */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
           className="col-span-1 p-3 sm:p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
         >
-          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center mb-1.5 shadow-xs border border-indigo-100">
-            <BrainCircuit size={16} />
+          <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center mb-1.5 shadow-xs">
+            <Linkedin size={15} />
           </div>
-          <div className="font-bold text-slate-900 text-xs sm:text-sm leading-tight">AI & Cloud Apps</div>
-          <div className="text-[10px] text-indigo-600 font-semibold">GCP Cloud Run</div>
-          <div className="text-[10px] text-slate-500 font-medium">LINE Bot • CI/CD</div>
-        </motion.div>
-
-        {/* Card 13: Power of Agility */}
-        <motion.div 
-          whileHover={{ scale: 1.02 }}
-          className="col-span-1 p-3 sm:p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
-        >
-          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-cyan-50 text-cyan-600 flex items-center justify-center mb-1.5 shadow-xs border border-cyan-100">
-            <Zap size={16} />
-          </div>
-          <div className="font-bold text-slate-800 text-xs sm:text-sm leading-tight">Power of Agility</div>
-          <div className="text-[10px] text-slate-500">Growth Mindset</div>
-        </motion.div>
-
-        {/* Card 14: Power of People */}
-        <motion.div 
-          whileHover={{ scale: 1.02 }}
-          className="col-span-1 p-3 sm:p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/90 shadow-xs hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
-        >
-          <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center mb-1.5 shadow-xs border border-purple-100">
-            <Users size={16} />
-          </div>
-          <div className="font-bold text-slate-800 text-xs sm:text-sm leading-tight">Power of People</div>
-          <div className="text-[10px] text-slate-500">Cross-Functional</div>
+          <div className="font-bold text-slate-900 text-xs sm:text-sm leading-tight">LinkedIn TW</div>
+          <div className="text-[10px] text-slate-500">Ambassador Lead</div>
+          <div className="text-[10px] sm:text-[11px] font-semibold text-blue-600 mt-0.5">2024/11 – 2025/6</div>
         </motion.div>
 
       </div>
