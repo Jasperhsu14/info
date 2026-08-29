@@ -441,7 +441,7 @@ const SectionHeading = ({ children, subtitle }: { children: React.ReactNode, sub
 // --- Apple-style Glassmorphism Bento Grid Component ---
 const AppleBentoGrid = () => {
   return (
-    <div className="relative rounded-3xl p-6 md:p-8 bg-gradient-to-br from-slate-100/80 via-white/40 to-slate-200/50 backdrop-blur-2xl border border-white/60 shadow-2xl shadow-slate-200/60 overflow-hidden">
+    <div className="relative rounded-3xl p-5 md:p-8 bg-gradient-to-br from-slate-100/80 via-white/50 to-slate-200/50 backdrop-blur-2xl border border-white/70 shadow-2xl shadow-slate-200/60 overflow-hidden">
       {/* Background glow effects */}
       <div className="absolute -top-24 -left-24 w-80 h-80 bg-blue-300/30 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-pink-300/30 rounded-full blur-3xl pointer-events-none" />
@@ -450,27 +450,27 @@ const AppleBentoGrid = () => {
       {/* Grid Container */}
       <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-3.5 md:gap-4.5">
         
-        {/* Card 1: NTUST */}
+        {/* Card 1: NTUST (Top Left, 2 cols) */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
-          className="col-span-2 p-5 rounded-2xl bg-white/70 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex items-center gap-4"
+          className="col-span-2 p-5 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex items-center gap-4"
         >
           <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 font-bold shrink-0 shadow-sm">
             <GraduationCap size={24} />
           </div>
           <div>
-            <div className="font-bold text-slate-900 text-base md:text-lg leading-snug">國立臺灣科技大學</div>
-            <div className="text-xs md:text-sm text-slate-600">Dept. of Information Management</div>
+            <div className="font-bold text-slate-900 text-base md:text-lg leading-snug">國立臺灣科技大學 NTUST</div>
+            <div className="text-xs md:text-sm text-slate-600">B.B.A. in Information Management (CCISA Co-author)</div>
             <div className="text-xs font-semibold text-blue-600 mt-0.5">2021/9 – 2026/2</div>
           </div>
         </motion.div>
 
-        {/* Card 2: Microsoft */}
+        {/* Card 2: Microsoft (Top Right, 2 cols) */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
-          className="col-span-2 p-5 rounded-2xl bg-white/70 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex items-center gap-4"
+          className="col-span-2 p-5 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex items-center gap-4"
         >
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-100 to-red-100 border border-amber-200/60 flex items-center justify-center shrink-0 shadow-sm">
+          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-100/70 to-red-100/70 border border-amber-200/60 flex items-center justify-center shrink-0 shadow-sm">
             <div className="grid grid-cols-2 gap-0.5">
               <div className="w-2.5 h-2.5 bg-[#f25022] rounded-xs" />
               <div className="w-2.5 h-2.5 bg-[#7fba00] rounded-xs" />
@@ -480,22 +480,22 @@ const AppleBentoGrid = () => {
           </div>
           <div>
             <div className="font-bold text-slate-900 text-base md:text-lg leading-snug">Microsoft Taiwan</div>
-            <div className="text-xs md:text-sm text-slate-600">Marketing Operation Intern (SE&O)</div>
+            <div className="text-xs md:text-sm text-slate-600">Marketing & Operations Intern (DevDays Asia • Azure & Copilot)</div>
             <div className="text-xs font-semibold text-blue-600 mt-0.5">2024/6 – 2025/7</div>
           </div>
         </motion.div>
 
-        {/* Card 3: BME Exchange */}
+        {/* Card 3: Taipei City Gov DoIT */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
-          className="col-span-1 p-4 rounded-2xl bg-white/70 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
+          className="col-span-1 p-4 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
         >
-          <div className="w-9 h-9 rounded-xl bg-red-900 text-white flex items-center justify-center text-xs font-bold mb-2 shadow-sm">
-            BME
+          <div className="w-9 h-9 rounded-xl bg-sky-50 text-sky-700 flex items-center justify-center font-bold text-xs mb-1.5 shadow-sm border border-sky-100">
+            DoIT
           </div>
-          <div className="font-bold text-slate-900 text-xs md:text-sm">Exchange</div>
-          <div className="text-[11px] text-slate-500 font-medium">Budapest, Hungary</div>
-          <div className="text-[11px] font-semibold text-blue-600 mt-0.5">2025/9 – 2026/1</div>
+          <div className="font-bold text-slate-900 text-xs md:text-sm leading-tight">Taipei City Gov</div>
+          <div className="text-[11px] text-slate-500 font-medium">Substitute Military</div>
+          <div className="text-[11px] font-semibold text-blue-600 mt-0.5">2026/4 – 2026/7</div>
         </motion.div>
 
         {/* CENTER HERO CARD: 許皓鈞 Jasper */}
@@ -512,81 +512,141 @@ const AppleBentoGrid = () => {
           </div>
         </motion.div>
 
-        {/* Card 4: GoSky AI */}
+        {/* Card 4: GoSky AI (Product Marketing Intern) */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
-          className="col-span-1 p-4 rounded-2xl bg-white/70 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
+          className="col-span-1 p-4 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
         >
           <div className="text-sm font-black tracking-tighter text-blue-600 mb-1">GOSKY:</div>
-          <div className="font-bold text-slate-900 text-xs md:text-sm">Marketing Intern</div>
-          <div className="text-[11px] font-semibold text-blue-600 mt-0.5">2023/12 – 2024/5</div>
+          <div className="font-bold text-slate-900 text-xs md:text-sm leading-tight">Product Mkt Intern</div>
+          <div className="text-[10px] text-emerald-600 font-semibold mt-0.5">CVR 7.9% → 11.3%</div>
+          <div className="text-[11px] font-semibold text-blue-600">2023/12 – 2024/6</div>
         </motion.div>
 
-        {/* Card 5: NTUCEP */}
+        {/* Card 5: BME Exchange */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
-          className="col-span-1 p-4 rounded-2xl bg-white/70 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
+          className="col-span-1 p-4 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
         >
-          <div className="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center font-bold text-sm mb-1.5">
+          <div className="w-9 h-9 rounded-xl bg-red-900 text-white flex items-center justify-center text-xs font-bold mb-1.5 shadow-sm">
+            BME
+          </div>
+          <div className="font-bold text-slate-900 text-xs md:text-sm">BME Exchange</div>
+          <div className="text-[11px] text-slate-500 font-medium">Budapest, Hungary</div>
+          <div className="text-[11px] font-semibold text-blue-600 mt-0.5">2025/9 – 2026/1</div>
+        </motion.div>
+
+        {/* Card 6: 7-ELEVEN myship */}
+        <motion.div 
+          whileHover={{ scale: 1.02 }}
+          className="col-span-1 p-4 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
+        >
+          <div className="w-8 h-8 rounded-lg bg-orange-500/10 text-orange-600 flex items-center justify-center font-black text-xs mb-1 border border-orange-200/50">
+            7-11
+          </div>
+          <div className="font-bold text-slate-900 text-xs md:text-sm leading-tight">7-ELEVEN myship</div>
+          <div className="text-[11px] text-slate-500 font-medium">Project Coordinator</div>
+          <div className="text-[11px] font-semibold text-blue-600 mt-0.5">2024/1 – Present</div>
+        </motion.div>
+
+        {/* Card 7: LinkedIn Taiwan */}
+        <motion.div 
+          whileHover={{ scale: 1.02 }}
+          className="col-span-1 p-4 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
+        >
+          <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center mb-1.5 shadow-sm">
+            <Linkedin size={16} />
+          </div>
+          <div className="font-bold text-slate-900 text-xs leading-tight">LinkedIn TW</div>
+          <div className="text-[10px] text-slate-500">Ambassador Lead</div>
+          <div className="text-[11px] font-semibold text-blue-600 mt-0.5">2024/11 – 2025/6</div>
+        </motion.div>
+
+        {/* Card 8: NTUCEP KonnecT */}
+        <motion.div 
+          whileHover={{ scale: 1.02 }}
+          className="col-span-1 p-4 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
+        >
+          <div className="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-600 flex items-center justify-center font-bold text-xs mb-1.5 border border-amber-200/50">
             臺大
           </div>
-          <div className="font-bold text-slate-900 text-xs md:text-sm leading-tight">創創學程</div>
-          <div className="text-[10px] text-slate-500">NTUCEP</div>
+          <div className="font-bold text-slate-900 text-xs leading-tight">NTU 創創學程</div>
+          <div className="text-[10px] text-slate-500">Project: KonnecT</div>
           <div className="text-[11px] font-semibold text-blue-600 mt-0.5">2023/9 – 2024/6</div>
         </motion.div>
 
-        {/* Card 6: TMR */}
+        {/* Card 9: TMR x Hahow */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
-          className="col-span-1 p-4 rounded-2xl bg-white/70 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
+          className="col-span-1 p-4 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
         >
-          <div className="text-base font-black tracking-tight text-red-600 mb-1">TMR</div>
-          <div className="font-bold text-slate-900 text-xs md:text-sm">Digital Mkt Intern</div>
-          <div className="text-[11px] font-semibold text-blue-600 mt-0.5">2022/2 – 2023/3</div>
+          <div className="text-sm font-black tracking-tight text-red-600 mb-1">TMR</div>
+          <div className="font-bold text-slate-900 text-xs leading-tight">Course Instructor</div>
+          <div className="text-[10px] text-slate-500">Hahow AI & Web</div>
+          <div className="text-[11px] font-semibold text-blue-600 mt-0.5">2022/2 – 2023/9</div>
         </motion.div>
 
-        {/* Card 7: Power of Agility */}
+        {/* Card 10: Certifications */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
-          className="col-span-1 p-4 rounded-2xl bg-white/70 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
+          className="col-span-1 p-4 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
         >
-          <div className="w-9 h-9 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center mb-1.5 shadow-sm">
-            <BrainCircuit size={20} />
+          <div className="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-1.5 shadow-sm border border-emerald-100">
+            <Award size={16} />
           </div>
-          <div className="font-bold text-slate-800 text-xs leading-tight">Power of Agility</div>
+          <div className="font-bold text-slate-900 text-xs leading-tight">Certifications</div>
+          <div className="text-[10px] text-emerald-600 font-semibold">AZ-900 • AI-900</div>
+          <div className="text-[10px] text-slate-500 font-medium">Google PM</div>
         </motion.div>
 
-        {/* Card 8: Power of People */}
+        {/* Card 11: TOEIC 855 */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
-          className="col-span-1 p-4 rounded-2xl bg-white/70 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
+          className="col-span-1 p-4 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
         >
-          <div className="w-9 h-9 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-1.5 shadow-sm">
-            <Users size={20} />
-          </div>
-          <div className="font-bold text-slate-800 text-xs leading-tight">Power of People</div>
-        </motion.div>
-
-        {/* Card 9: TOEIC 855 */}
-        <motion.div 
-          whileHover={{ scale: 1.02 }}
-          className="col-span-1 p-4 rounded-2xl bg-white/70 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
-        >
-          <div className="w-9 h-9 rounded-xl bg-slate-900 text-white flex items-center justify-center text-xs font-bold mb-1.5 shadow-sm">
+          <div className="w-8 h-8 rounded-lg bg-slate-900 text-white flex items-center justify-center text-xs font-bold mb-1.5 shadow-sm">
             文 A
           </div>
           <div className="font-bold text-slate-900 text-xs">TOEIC 855</div>
-          <div className="text-[10px] text-emerald-600 font-semibold">Gold Certificate</div>
+          <div className="text-[10px] text-slate-500">L:450 • R:405</div>
+          <div className="text-[10px] text-amber-600 font-semibold">Gold Certificate</div>
         </motion.div>
 
-        {/* Card 10: TEDxNTUST */}
+        {/* Card 12: Personal AI Apps */}
         <motion.div 
           whileHover={{ scale: 1.02 }}
-          className="col-span-1 p-4 rounded-2xl bg-white/70 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
+          className="col-span-1 p-4 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
         >
-          <div className="text-xs font-black text-red-600 mb-1">TEDx<span className="text-slate-900">NTUST</span></div>
-          <div className="font-bold text-slate-900 text-xs leading-tight">Director MKT & PR</div>
-          <div className="text-[11px] font-semibold text-blue-600 mt-0.5">2021/9 – 2022/8</div>
+          <div className="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center mb-1.5 shadow-sm border border-indigo-100">
+            <BrainCircuit size={16} />
+          </div>
+          <div className="font-bold text-slate-900 text-xs leading-tight">AI & Cloud Apps</div>
+          <div className="text-[10px] text-indigo-600 font-semibold">GCP Cloud Run</div>
+          <div className="text-[10px] text-slate-500 font-medium">LINE Bot • CI/CD</div>
+        </motion.div>
+
+        {/* Card 13: Power of Agility */}
+        <motion.div 
+          whileHover={{ scale: 1.02 }}
+          className="col-span-1 p-4 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
+        >
+          <div className="w-8 h-8 rounded-lg bg-cyan-50 text-cyan-600 flex items-center justify-center mb-1.5 shadow-sm border border-cyan-100">
+            <Zap size={16} />
+          </div>
+          <div className="font-bold text-slate-800 text-xs leading-tight">Power of Agility</div>
+          <div className="text-[10px] text-slate-500">Growth Mindset</div>
+        </motion.div>
+
+        {/* Card 14: Power of People */}
+        <motion.div 
+          whileHover={{ scale: 1.02 }}
+          className="col-span-1 p-4 rounded-2xl bg-white/75 backdrop-blur-xl border border-white/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-center items-center text-center"
+        >
+          <div className="w-8 h-8 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center mb-1.5 shadow-sm border border-purple-100">
+            <Users size={16} />
+          </div>
+          <div className="font-bold text-slate-800 text-xs leading-tight">Power of People</div>
+          <div className="text-[10px] text-slate-500">Cross-Functional</div>
         </motion.div>
 
       </div>
