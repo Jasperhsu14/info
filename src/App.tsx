@@ -8,17 +8,17 @@ import { motion, AnimatePresence } from 'motion/react';
 import hsuImage from './hsu.webp';
 
 // Project & Portfolio Assets
-import bentoImage from './assets/bento_profile.png';
-import devdaysImg from './assets/projects/devdays_booth.png';
-import copilotImg from './assets/projects/copilot_reels.png';
-import linkedinImg from './assets/projects/linkedin_event.png';
-import goskyImg from './assets/projects/gosky_dashboard.png';
-import konnectImg from './assets/projects/konnect_analysis.png';
-import devdaysSlide from './assets/projects/page_4.png';
-import copilotSlide from './assets/projects/page_5.png';
-import linkedinSlide from './assets/projects/page_6.png';
-import goskySlide from './assets/projects/page_7.png';
-import konnectSlide from './assets/projects/page_8.png';
+import bentoImage from './assets/bento_profile.webp';
+import devdaysImg from './assets/projects/devdays_booth.webp';
+import copilotImg from './assets/projects/copilot_reels.webp';
+import linkedinImg from './assets/projects/linkedin_event.webp';
+import goskyImg from './assets/projects/gosky_dashboard.webp';
+import konnectImg from './assets/projects/konnect_analysis.webp';
+import devdaysSlide from './assets/projects/page_4.webp';
+import copilotSlide from './assets/projects/page_5.webp';
+import linkedinSlide from './assets/projects/page_6.webp';
+import goskySlide from './assets/projects/page_7.webp';
+import konnectSlide from './assets/projects/page_8.webp';
 
 import { 
   Linkedin, 
@@ -670,6 +670,10 @@ export default function App() {
               <img 
                 src={hsuImage} 
                 alt="Hao-Jiun (Jasper) Hsu" 
+                width={400}
+                height={400}
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
@@ -845,6 +849,10 @@ export default function App() {
                       <img 
                         src={cs.thumbnail} 
                         alt={cs.title} 
+                        width={600}
+                        height={338}
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80" />
@@ -943,6 +951,7 @@ export default function App() {
                   <img 
                     src={activeModal.detailImage} 
                     alt={activeModal.title}
+                    decoding="async"
                     className="w-full h-auto object-cover"
                   />
                 </div>
